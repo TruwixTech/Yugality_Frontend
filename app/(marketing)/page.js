@@ -6,14 +6,10 @@ import Features from "../components/home/Features";
 import Testimonials from "../components/home/Testimonials";
 import Impact from "../components/home/Impact";
 import Pricing from "../components/home/Pricing";
-import Blogs from "../components/home/Blogs";
 import FAQ from "../components/home/FAQ";
 import Preloader from "../components/home/Preloader";
-// import { getAllBlogs } from "@/lib/mdx";
 
-export default async function Home() {
-  const blogs = getAllBlogs();
-
+export default function Home() {
   return (
     <main className="bg-colordark text-colorlight overflow-x-hidden relative">
       <Preloader />
@@ -24,7 +20,7 @@ export default async function Home() {
       <Testimonials />
       <Impact />
       <Pricing />
-      <Blogs blogs={blogs} />
+      {/* Blogs removed temporarily */}
       <FAQ />
     </main>
   );
