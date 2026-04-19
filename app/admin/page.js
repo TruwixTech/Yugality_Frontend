@@ -3,7 +3,7 @@
 import { Users, CreditCard, Settings } from "lucide-react";
 import { useState, useEffect, Suspense } from "react";
 import { useSearchParams, useRouter } from "next/navigation";
-import { createClient } from "@/lib/supabase/client";
+// import { createClient } from "@/lib/supabase/client";
 import AdminHeader from "@/app/components/admin/AdminHeader";
 import AdminTabs from "@/app/components/admin/AdminTabs";
 import UsersTab from "@/app/components/admin/UsersTab";
