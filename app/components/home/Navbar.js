@@ -13,6 +13,8 @@ export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const [user, setUser] = useState(null);
+  const [users, setUsers] = useState([]);
+
 
   const isLightPage = pathname === "/solutions" || pathname.startsWith("/solutions/") || pathname.startsWith("/blog") || pathname === "/demo" || pathname === "/about" || pathname === "/pricing" || pathname === "/security";
 
@@ -27,20 +29,24 @@ export default function Navbar() {
   }, []);
 
   useEffect(() => {
-    const supabase = createClient();
+  setUsers([]);
+}, []);
+
+  // useEffect(() => {
+  //   // const supabase = createClient();
     
-    // Check current user
-    supabase.auth.getUser().then(({ data: { user } }) => {
-      setUser(user);
-    });
+  //   // Check current user
+  //   supabase.auth.getUser().then(({ data: { user } }) => {
+  //     setUser(user);
+  //   });
 
-    // Listen for auth changes
-    const { data: { subscription } } = supabase.auth.onAuthStateChange((_event, session) => {
-      setUser(session?.user ?? null);
-    });
+  //   // Listen for auth changes
+  //   const { data: { subscription } } = supabase.auth.onAuthStateChange((_event, session) => {
+  //     setUser(session?.user ?? null);
+  //   });
 
-    return () => subscription.unsubscribe();
-  }, []);
+  //   return () => subscription.unsubscribe();
+  // }, []);
 
   const shouldBeLight = scrolled || isLightPage;
 
