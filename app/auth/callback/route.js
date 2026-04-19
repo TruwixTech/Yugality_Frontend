@@ -1,5 +1,9 @@
+<<<<<<< HEAD
 // import { createClient } from '@/lib/supabase/server';
 // import { NextResponse } from 'next/server';
+=======
+import { NextResponse } from 'next/server';
+>>>>>>> 241dac6 (final)
 
 // export async function GET(request) {
 //   const { searchParams } = new URL(request.url);
