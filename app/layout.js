@@ -8,6 +8,7 @@ const manrope = Manrope({
   variable: '--font-manrope',
 });
 
+
 export const metadata = {
   title: "Yugality — AI Workspace",
   description: "Yugality is an AI-powered workspace for documents, research, notes, calendars, and case timelines.",
