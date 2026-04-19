@@ -1,0 +1,42 @@
+{
+  "name": "yugality",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint"
+  },
+  "dependencies": {
+    "@fontsource-variable/inter": "^5.2.8",
+    "@fontsource/dm-sans": "^5.2.8",
+    "@lexical/code": "^0.42.0",
+    "@lexical/link": "^0.42.0",
+    "@lexical/list": "^0.42.0",
+    "@lexical/markdown": "^0.42.0",
+    "@lexical/react": "^0.42.0",
+    "@lexical/rich-text": "^0.42.0",
+    "@lexical/table": "^0.42.0",
+    "@lexical/utils": "^0.42.0",
+    "@tailwindcss/typography": "^0.5.19",
+    "framer-motion": "^12.36.0",
+    "geist": "^1.7.0",
+    "gray-matter": "^4.0.3",
+    "lexical": "^0.42.0",
+    "lucide-react": "^0.577.0",
+    "mammoth": "^1.12.0",
+    "next": "16.1.6",
+    "next-mdx-remote": "^6.0.0",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "react-markdown": "^10.1.0",
+    "react-pdf": "^9.1.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "eslint": "^9",
+    "eslint-config-next": "16.1.6",
+    "tailwindcss": "^4"
+  }
+}
